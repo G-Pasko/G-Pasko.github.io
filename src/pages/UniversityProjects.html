@@ -14,26 +14,49 @@
       <div class="title">
         <h1><b><i>Granger's University Projects</i></b></h1>
       </div>
+      <div class="subtitle">Unfortunately, UCSC does not allow code to be shared to the public. Below are the descriptions of varioius projects I completed.</div>
     </div>
     <div class="section">
       <nav class="navbar" role="navigation" style="display: flex; width: 95%; justify-content: center; margin: auto; padding: auto;">
           <button class="button is-info is-inverted is-outlined" style="width: 24%; margin: auto;" onclick="location.href = '../../index.html';">
-        <b style="font-size: 20px;">About Me</b>
-        </button>
-        <button class="button is-info is-inverted is-outlined" style="width: 24%; margin: auto;" 
-        onclick="location.href = './Resume.html';">
-          <b style="font-size: 20px;">Resume</b>
-        </button>
-        <button class="button is-info is-inverted is-outlined" style="width: 24%; margin: auto;" 
-        onclick="location.href = 'PersonalProjects.html';">
-          <b style="font-size: 20px;">Personal Projects</b>
-        </button>
-        <button class="button is-info is-inverted is-outlined" style="width: 24%; margin: auto;" 
-        onclick="location.href = 'UniversityProjects.html';">
-          <b style="font-size: 20px;">University Projects</b>
-        </button>
-      </nav>
+        <b style="font-size: 130%;">About Me</b>
+      </button>
+      <button class="button is-info is-inverted is-outlined" style="width: 24%; margin: auto;" 
+      onclick="location.href = './Resume.html';">
+        <b style="font-size: 130%;">Resume</b>
+      </button>
+      <button class="button is-info is-inverted is-outlined" style="width: 24%; margin: auto;" 
+      onclick="location.href = 'PersonalProjects.html';">
+        <b style="font-size: 130%;">Personal Projects</b>
+      </button>
+      <button class="button is-info is-inverted is-outlined" style="width: 24%; margin: auto;" 
+      onclick="location.href = 'UniversityProjects.html';">
+        <b style="font-size: 130%;">University Projects</b>
+      </button>
+    </nav>
     </div>
+
+    <!--BODY-->
+    <div class="section">
+      <div class="card">
+        <div class="card-header title">Projects in C/C++</div>
+        <div class="card-content">
+          <div>
+            <div class="subtitle" style="font: bold; font-size: 175%;"> <u><b>Wordle & World Solver</b></u></div>
+            <strong>
+              &emsp;Using C, I was able to create a .txt file that had all 5 letter words in the english language seporated by new lines. I then wrote a program that, when started, would pick a word from that file at random then promt the user to enter a 5 letter word. After  the input is entered, the program loops through the input to return a 5 letter string with each index representing the correspodning leter's accuracy. G being "correct letter, correct placement", Y being "correct letter, wrong placement" and R being "Letter not in mystery word".
+            </strong>
+            <br><br>
+            <strong>
+              &emsp;I also created a seporate program that used the same word bank as the previous program, but instead had the goal of solving wordles. The program starts by rating all of the words by their letters' of appearance in the word bank. Every round, the program will return the highest scoring word, always starting with "irate", and the user will return it's accuracy using the same G,Y,R system as described above. It then edits the programs viewable word bank to filter our impossible options, and then returns the next highest scroing word that follows the conditions provided by the users assessment of the previous guesses.
+            </strong>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
 
     <footer class="footer" style="position: absolute; bottom: 0; width: 100%;">
       <div class="content" style="text-align: center;">
