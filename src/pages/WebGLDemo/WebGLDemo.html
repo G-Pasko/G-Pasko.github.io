@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Add Lighting</title>
+  </head>
+
+  <body onload="main()">
+    <div style="width: 70%; float: left;">
+      <h1>Instructions:</h1>
+      <p>Use arrow keys/WASD to move the camera around the world</p>
+      <p>Use Q to pan right, and R to pan down</p>
+      <p>Use Z to pan down, and X to pan right</p>
+      <p> You can also pan the camera using the mouse, but it can be tough on your CPU</p>
+    </div>
+    <div style="width: 30%; float: right;">
+      <button onclick="location.href = '../UniversityProjects.html'">
+        Return to University Projects Page
+      </button>
+    </div>
+
+    
+    <canvas id="webgl" width="800" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p>
+    Legs Animation:<button type = "button" id="legsAnimationOnButton">ON</button>
+    <button type = "button" id="legsAnimationOffButton">OFF</button>
+
+    <p>
+    Head Animation:<button type = "button" id="headAnimationOnButton">ON</button>
+    <button type = "button" id="headAnimationOffButton">OFF</button>
+
+    <p>
+    Ear Animation:<button type = "button" id="earAnimationOnButton">ON</button>
+    <button type = "button" id="earAnimationOffButton">OFF</button>
+    
+    <p>
+    Show Normals:<button type = "button" id="NormalsON">ON</button>
+    <button type = "button" id="NormalsOFF">OFF</button>
+
+    <p>
+    Show Light:<button type = "button" id="LightON">ON</button>
+    <button type = "button" id="LightOFF">OFF</button>
+    <p>
+    Show Spot Light:<button type = "button" id="SpotLightON">ON</button>
+    <button type = "button" id="SpotLightOFF">OFF</button>
+
+    <p>
+    Camera Angle (horizontal)<input type= "range" min = "-90" max = "90" value = "-45" class = "slider" id = "angleSlide_h">
+
+    <p>
+    Camera Angle (vertical)<input type= "range" min = "-90" max = "90" value = "-15" class = "slider" id = "angleSlide_v">
+
+    <p>
+    Light X<input type= "range" min = "-250" max = "250" value = "0" class = "slider" id = "light_x">
+
+    <p>
+    Light Y<input type= "range" min = "-250" max = "250" value = "0" class = "slider" id = "light_y">
+    
+    <p>
+    Light Z<input type= "range" min = "-250" max = "250" value = "0" class = "slider" id = "light_z">
+
+    <p>
+    Light Red<input type= "range" min = "0" max = "100" value = "0" class = "slider" id = "light_red">
+
+    <p>
+    Light Green<input type= "range" min = "0" max = "100" value = "0" class = "slider" id = "light_green">
+    
+    <p>
+    Light Blue<input type= "range" min = "0" max = "100" value = "0" class = "slider" id = "light_blue">
+
+
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangles.js"></script>
+    <script src="Points.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Mushroom.js"></script>
+    <script src="Camera.js"></script>
+    <script src="WebGLDemo.js"></script>
+
+
+
+    
+  </body>
+</html>

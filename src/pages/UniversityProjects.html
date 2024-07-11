@@ -11,10 +11,10 @@
 
   <body>
   	<div class="Header">
-      <div class="title">
+      <div class="title" style="font-size: calc(1vw * 5)">
         <h1><b><i>Granger's University Projects</i></b></h1>
       </div>
-      <div class="subtitle">Unfortunately, UCSC does not allow code to be shared to the public. Below are the descriptions of varioius projects I completed.</div>
+      <div class="subtitle" style="font-size: calc(1vw * 2)">Unfortunately, UCSC does not allow code to be shared to the public. Below are the descriptions of varioius projects I completed.</div>
     </div>
     <nav class="navbar" role="navigation" style="display: flex; width: 95%; justify-content: center; margin: auto; padding: auto;">
       <button class="button is-info is-inverted is-outlined is-responsive" style="width: 24%; margin: auto; overflow: hidden;" onclick="location.href = '../../index.html';">
@@ -35,26 +35,25 @@
     </nav>
 
     <!--BODY-->
-    <div class="section">
-
+    <div class="section" style="font-size: calc(1vw * 2)">
       <div class="card">
-        <div class="card-header title">Projects in Python</div>
+        <div class="card-header title" style="font-size: calc(1vw * 3.5)">Projects in Python</div>
           <div class="card-content">
-            <div class="subtitle" style="font: bold; font-size: 175%;"> <u><b>PacMan AI Agent</b></u></div>
+            <div class="subtitle" style="font: bold; font-size: calc(1vw * 2.5);"> <u><b>PacMan AI Agent</b></u></div>
             <strong>
             &emsp;Using a simulated version of Pacman, we used python to simulate a Pacman agent to play the game as well as possible. We wrote these agents using react methods, Q-Learning agents, and Minimax. At the end of the year, we also wrote a 2-agent script that competed in a class-wide capture the flag tournament.
           </strong>
         </div>
 
         <div class="card-content">
-            <div class="subtitle" style="font: bold; font-size: 175%;"> <u><b>N-Gram Encoding Language Model</b></u></div>
+            <div class="subtitle" style="font: bold; font-size: calc(1vw * 2.5);"> <u><b>N-Gram Encoding Language Model</b></u></div>
             <strong>
             &emsp;An n-gram model gets trained on various text files and analyze the sequences of up to n words. After training, the program can take inputs and predict the following word or tell you the probability of an entered phrase based on the training data. 
           </strong>
         </div>
 
         <div class="card-content">
-            <div class="subtitle" style="font: bold; font-size: 175%;"> <u><b>K-Means </b></u></div>
+            <div class="subtitle" style="font: bold; font-size: calc(1vw * 2.5);"> <u><b>K-Means </b></u></div>
             <strong>
             &emsp;K-means, an unsupervised learning algorithm aimed at grouping and discriminating data, was another algorithm we wrote in one of my machine learning classes. The goal was to group sets of data into K clusters by using various methods of analysis like coordinates or other fields in the data provided. We iterate over all of our clusters and measure the variance of our points per cluster. Each time we make that iteration, we update our K clusters to find the best fit.
           </strong>
@@ -63,9 +62,9 @@
       </div>
 
       <div class="card">
-        <div class="card-header title">Projects in C/C++</div>
+        <div class="card-header title" style="font-size: calc(1vw * 3.5);">Projects in C/C++</div>
         <div class="card-content">
-          <div class="subtitle" style="font: bold; font-size: 175%;"> <u><b>Wordle & World Solver</b></u></div>
+          <div class="subtitle" style="font: bold; font-size: calc(1vw * 2.5);"> <u><b>Wordle & World Solver</b></u></div>
           <strong>
             &emsp;I started by creating a .txt file that had all 5 letter words in the english language seporated by new lines. I then wrote a program that, when started, would pick a word from that file at random then promt the user to enter a 5 letter word. After  the input is entered, the program loops through the input to return a 5 letter string with each index representing the correspodning leter's accuracy. G being "correct letter, correct placement", Y being "correct letter, wrong placement" and R being "Letter not in mystery word".
           </strong>
@@ -78,20 +77,34 @@
         </div>
 
         <div class="card-content">
-          <div class="subtitle" style="font: bold; font-size: 175%;"> <u><b>KVS Cache</b></u></div>
+          <div class="subtitle" style="font: bold; font-size: calc(1vw * 2.5);"> <u><b>KVS Cache</b></u></div>
           <strong>
             &emsp;This program was a system of threads that broke the input file(s) into tokens. In parallel, these threads would parse the document and use mutexes (sigle access function locks) to increase the count of each word used. The use of threads and mutexes made it a very fast document reader.
           </strong>
         </div>
 
         <div class="card-content">
-          <div class="subtitle" style="font: bold; font-size: 175%;"><u><b>C++ 101</b></u></div>
+          <div class="subtitle" style="font: bold; font-size: calc(1vw * 2.5);"><u><b>C++ 101</b></u></div>
           <strong>
             &emsp;I created a large variety of classes from higher levels of abstraction like lists, linked lists, dictionaries, and graphs from scratch. I also wrote various classical search algorithms like DFS, BFS, binary search, and more!
           </strong>
         </div>
       </div>
-    </div>
+
+      <div class="card">
+          <div class="card-header title" style="font-size: calc(1vw * 3.5);">Web Projects</div>
+          <div class="card-content">
+            <div class="subtitle" style="font: bold; font-size: calc(1vw * 2.5);"> <u><b>Minecraft World</b></u></div>
+            <strong>
+              &emsp;Using Javascript, ThreeJS, and WebGL, I was able to fully render an interactable minecraft world with lighting, custom shapes/models, and a traversable enviornment.
+            </strong>
+            <button class="button is-info is-inverted is-outlined is-responsive" style="width: 24%; margin: auto; overflow: hidden;" onclick="location.href = 'WebGLDemo/WebGLDemo.html';">
+        <b style="font-size: 130%;">See the world HERE</b>
+      </button>
+          </div>
+        </div>
+      </div>
+    </body>
 
 
     <footer class="footer" style="bottom: 0; width: 100%;">
