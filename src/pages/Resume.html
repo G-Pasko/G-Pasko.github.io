@@ -5,35 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Resume</title>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
   </head>
   <body>
-    <div class="Header">
-      <div class="title" style="font-size: calc(1vw * 5);">
-        <h1><b><i>Granger's Resume and Work Experience</i></b></h1>
+    <div class="Header card">
+      <div class="section header-content">
+        <div class="title">
+          <p  class="header-title">Resume and Work Experience</p>
+          <div class="subtitle header-subtitle">
+           On the left, you'll see my professional resume. On the right, is my work various work expereince outside of the industry.
+          </div>
+        </div>
       </div>
+    
+      <nav class="navbar header-navbar" role="navigation">
+        <button class="button is-info is-inverted is-outlined is-responsive nav-button"
+        onclick="location.href = '../../index.html';">
+          <b style="font-size: 130%;">About Me</b>
+        </button>
+        <button class="button is-info is-inverted is-outlined is-responsive nav-button is-focused is-hovered"
+        onclick="location.href = './Resume.html';">
+          <b style="font-size: 130%;">Resume</b>
+        </button>
+        <button class="button is-info is-inverted is-outlined is-responsive nav-button"
+        onclick="location.href = 'PersonalProjects.html';">
+          <b style="font-size: 130%;">Personal Projects</b>
+        </button>
+        <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+        onclick="location.href = 'UniversityProjects.html';">
+          <b style="font-size: 130%;">University Projects</b>
+        </button>
+      </nav>
     </div>
-    <nav class="navbar" role="navigation" style="display: flex; width: 95%; justify-content: center; margin: auto; padding: auto;">
-      <button class="button is-info is-inverted is-outlined is-responsive" style="width: 24%; margin: auto; overflow: hidden;" onclick="location.href = '../../index.html';">
-        <b style="font-size: 130%;">About Me</b>
-      </button>
-      <button class="button is-info is-inverted is-outlined is-responsive" style="width: 24%; margin: auto; overflow: hidden;" 
-      onclick="location.href = './Resume.html';">
-        <b style="font-size: 130%;">Resume</b>
-      </button>
-      <button class="button is-info is-inverted is-outlined is-responsive" style="width: 24%; margin: auto; overflow: hidden;" 
-      onclick="location.href = 'PersonalProjects.html';">
-        <b style="font-size: 130%;">Personal Projects</b>
-      </button>
-      <button class="button is-info is-inverted is-outlined is-responsive" style="width: 24%; margin: auto; overflow: hidden;" 
-      onclick="location.href = 'UniversityProjects.html';">
-        <b style="font-size: 130%;">University Projects</b>
-      </button>
-    </nav>
 
     <!-- Body of page -->
-    <div class="section" style="width: 100%; display: flex; ont-size: calc(1vw * 3.5)">
-      <div class="left-column" style="width: 66%; float: left;">
+    <div class="section res-page-section">
+      <div class="resume-column-left">
         <div class="title"><b><i><u>Resume: </u></i></b></div>
         <iframe
           src="../assets/GrangerResumeJuly2024.pdf"
@@ -41,17 +49,17 @@
           height= "500px">
         </iframe>
       </div>
-      <div class="right-column" style="width: 33%; float: left;">
-        <div class="card" style="width: 100%;">
-          <span><div class="title" style="font-size: calc(1vw * 3.5);"><u><b><i>Other Work Experience:</i></b></u></div></span>
+      <div class="resume-column-right">
+        <div class="card">
+          <span><div class="title section-title"><u><b><i>Other Work Experience:</i></b></u></div></span>
           <div class="card-content">Adding more soon...</div>
         </div>
       </div>
     </div>
 
 
-    <footer class="footer" style="bottom: 0; width: 100%;">
-      <div class="content" style="text-align: center;">
+    <footer class="footer web-footer">
+      <div class="content footer-content">
         <p><i>
           Feel free to reach me at: <a href="mailto:grangerdpasko@gmail.com">grangerdpasko@gmail.com</a>
         </i></p>
