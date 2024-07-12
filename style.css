@@ -48,12 +48,29 @@
 }
 
 .section-title {
-	font-size: calc(1vw * 3.5);
+	font-size: calc(1vw * 4);
+	font-style: italic;
+	text-decoration: underline;
+	font-weight: bold;
+	color: white;
 }
 
-.abt-me-body {
+.section-subtitle {
+	font-size: calc(1vw * 3);
+	font-style: italic;
+	text-decoration: underline;
+	font-weight: bold;
+	color: #dbdbdb;
+}
+
+.section-content {
+	font-size: 125%;
+}
+
+.section-body {
 	font-size: calc(1vw * 2);
 	text-align: justify-all;
+	color: #bfbfbf;
 }
 
 .web-footer {
@@ -63,7 +80,7 @@
 
 .footer-content {
 	text-align: center;
-
+	font-style: italic;
 }
 
 .res-page-section {

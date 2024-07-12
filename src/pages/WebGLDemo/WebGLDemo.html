@@ -2,33 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
     <title>Add Lighting</title>
   </head>
 
   <body onload="main()">
-    <div style="width: 70%; float: left;">
-      <h1>Instructions:</h1>
-      <p>Use arrow keys/WASD to move the camera around the world</p>
-      <p>Use Q to pan right, and R to pan down</p>
-      <p>Use Z to pan down, and X to pan right</p>
-      <p> You can also pan the camera using the mouse, but it can be tough on your CPU</p>
-    </div>
-    <div style="width: 30%; float: right;">
-      <button onclick="location.href = '../UniversityProjects.html'">
-        Return to University Projects Page
-      </button>
+    <div class="Header card">
+      <div class="section header-content">
+        <div class="title">
+          <p  class="header-title">JS Graphics Rendering Demo</p>
+          <div class="subtitle header-subtitle"> All the rendering below was done in JS</div>
+          <nav class="navbar header-navbar" role="navigation">
+            <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+            onclick="location.href = '../../index.html';">
+              <b style="font-size: 130%;">About Me</b>
+            </button>
+            <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+            onclick="location.href = './Resume.html';">
+            <b style="font-size: 130%;">Resume</b>
+            </button>
+            <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+            onclick="location.href = 'PersonalProjects.html';">
+              <b style="font-size: 130%;">Personal Projects</b>
+            </button>
+            <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+            onclick="location.href = 'UniversityProjects.html';">
+              <b style="font-size: 130%;">University Projects</b>
+            </button>
+          </nav>
+
+          <div class="subtitle header-subtitle">
+            <div class="section" style="width: 70%; float: left;">
+              <h1>Instructions:</h1>
+              <p>- Use arrow keys/WASD to move the camera around the world</p>
+              <p>- Use Q to pan right, and R to pan down</p>
+              <p>- Use Z to pan down, and X to pan right</p>
+              <p>- You can also pan the camera using the mouse, but it can be tough on your CPU</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    
     <canvas id="webgl" width="800" height="400">
     Please use a browser that supports "canvas"
     </canvas>
 
-    <p>
-    Legs Animation:<button type = "button" id="legsAnimationOnButton">ON</button>
-    <button type = "button" id="legsAnimationOffButton">OFF</button>
+    <div class="section-subtitle">Leg animation: </div>
+    <button class="button is-primary is-inverted is-outlined is-responsive" type = "button" id="legsAnimationOnButton">ON</button>
+    <button class="button is-link is-danger is-outlined is-responsive" type = "button" id="legsAnimationOffButton">OFF</button>
 
     <p>
     Head Animation:<button type = "button" id="headAnimationOnButton">ON</button>
