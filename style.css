@@ -131,6 +131,7 @@
 
 	.game-section-left {
 		display: flex;
+		height: auto;
 		.project-images {
 			width: 40%;
 			float: left;
