@@ -13,7 +13,9 @@
 }
 
 .header-subtitle {
+	display: flex;
 	font-size: calc(1vw * 2);
+	color: #dbdbdb;
 }
 
 .profile-pic {
@@ -63,14 +65,11 @@
 	color: #dbdbdb;
 }
 
-.section-content {
-	font-size: 125%;
-}
-
 .section-body {
 	font-size: calc(1vw * 2);
 	text-align: justify-all;
 	color: #bfbfbf;
+	display: flex;
 }
 
 .web-footer {
@@ -119,6 +118,7 @@
 		color: #bfbfbf;
 		font-size: calc(1vw * 1.5);
 		font-weight: bold;
+		display: flex;
 	}
 }
 
