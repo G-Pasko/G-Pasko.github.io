@@ -39,7 +39,14 @@
 .nav-button {
 	width: 24%;
 	margin: auto;
-	overflow: hidden;}
+	overflow: hidden;
+	.nav-btn-text {
+		display: flex;
+		font-weight: bold;
+		font-size: calc(1vw * 2.25);
+	}
+}
+
 
 .abt-me {
 	display: flex;
@@ -199,6 +206,7 @@
 }
 
 
+
 .control {
 	width: 800px;
 	display: flex;
@@ -215,6 +223,3 @@
 		font-size: calc(1vw * 1.5);
 	}
 }
-
-
-
