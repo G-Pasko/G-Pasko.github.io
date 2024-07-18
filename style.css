@@ -214,8 +214,18 @@
 
 
 body {
-	background-color: black;
-    color: white;
+	background-color: #222;
+    color: #e6e6e6;
+}
+
+.Header {
+	background-color: #222;
+    color: #e6e6e6;
+}
+
+footer {
+	background-color: #222;
+    color: #e6e6e6;
 }
 
 
