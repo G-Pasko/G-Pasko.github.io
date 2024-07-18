@@ -54,7 +54,6 @@
 	font-style: italic;
 	text-decoration: underline;
 	font-weight: bold;
-	color: white;
 }
 
 .section-subtitle {
@@ -111,6 +110,7 @@
 	.pos-subtitle {
 		color: #e8e8e8;
 		font-weight: bold;
+		font-style: italic;
 		font-size: calc(1vw * 1.75);
 	}
 
