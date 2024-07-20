@@ -11,6 +11,7 @@
   </head>
 
   <body>
+
   	<div class="header card">
       <div class="section header-content">
         <div class="title">
@@ -20,28 +21,55 @@
           </div>
         </div>
       </div>
-    <nav class="navbar header-navbar" role="navigation">
-      <button class="button is-info is-inverted is-outlined is-responsive nav-button"
-      onclick="location.href = '../../index.html';">
-        <span class="nav-btn-text">About Me</span>
-      </button>
-      <button class="button is-info is-inverted is-outlined is-responsive nav-button"
-      onclick="location.href = './Resume.html';">
-        <span class="nav-btn-text">Resume</span>
-      </button>
-      <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
-      onclick="location.href = 'PersonalProjects.html';">
-        <span class="nav-btn-text">Personal Projects </span>
-      </button>
-      <button class="button is-info is-inverted is-outlined is-responsive is-focused is-hovered nav-button"
-      onclick="location.href = 'UniversityProjects.html';">
-        <span class="nav-btn-text">University Projects </span>
-      </button>
-    </nav>
+      
+      <nav class="navbar header-navbar" role="navigation">
+        <button class="button is-info is-inverted is-outlined is-responsive nav-button"
+        onclick="location.href = '../../index.html';">
+          <span class="nav-btn-text">About Me</span>
+        </button>
+        <button class="button is-info is-inverted is-outlined is-responsive nav-button"
+        onclick="location.href = './Resume.html';">
+          <span class="nav-btn-text">Resume</span>
+        </button>
+        <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+        onclick="location.href = 'PersonalProjects.html';">
+          <span class="nav-btn-text">Personal Projects </span>
+        </button>
+        <button class="button is-info is-inverted is-outlined is-responsive is-focused is-hovered nav-button"
+        onclick="location.href = 'UniversityProjects.html';">
+          <span class="nav-btn-text">University Projects </span>
+        </button>
+      </nav>
+    </div>
+
+    <div class='scroll-card'>
+        <div class="tooltip">
+        <img class="tooltip-img" src="../assets/HamburgerBtn.png"></img>
+        <span class="tooltip-content">
+            <div class="section-subtitle">Scroll to Python Projects:</div>
+              <button class="button is-info is-outlined is-responsive nav-button" 
+              onclick="scrollWindow('PythonProjects');">
+                <span class="nav-btn-text">Jump to Python Projects </span>
+              </button>
+
+              <button class="button is-info is-outlined is-responsive nav-button" 
+              onclick="scrollWindow('C/C++');">
+                <span class="nav-btn-text">Jump to C/C++ Projects </span>
+              </button>
+
+              <button class="button is-info is-outlined is-responsive nav-button" 
+              onclick="scrollWindow('WebProjects');">
+                <span class="nav-btn-text">Jump to Web Projects </span>
+              </button>
+
+            </div>
+        </span>
+      </div>
 
     <!--BODY-->
     <div class="section">
-      <div class="card">
+
+      <div class="card" id="PythonProjects">
         <div class="section-title">Projects in Python</div>
           <div class="card-content">
             <div class="section-subtitle">PacMan AI Agent</div>
@@ -66,7 +94,7 @@
 
       </div>
 
-      <div class="card">
+      <div class="card" id="C/C++">
         <div class="card-header section-title">Projects in C/C++</div>
         <div class="card-content">
           <div class="section-subtitle">Wordle & World Solve></div>
@@ -96,7 +124,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" id="WebProjects">
           <div class="card-header section-title">Web Projects</div>
           <div class="card-content">
             <div class="section-subtitle">Minecraft World</div>
@@ -105,11 +133,11 @@
             </strong>
             <button class="button is-info is-inverted is-outlined is-responsive nav-button"
             onclick="location.href = 'WebGLDemo/WebGLDemo.html';">
-        <b style="font-size: 130%;">See the world HERE</b>
-      </button>
+              <div class="nav-btn-text">See the world HERE</div>
+            </button>
           </div>
         </div>
-      </div>
+      </div>`
     </body>
 
 
@@ -121,4 +149,14 @@
       </div>
     </footer>
   </body>
+  <script type="text/javascript">
+    function scrollWindow(id)
+    {
+      var element = document.getElementById(id)
+      var position = element.getBoundingClientRect();
+      var x = position.left;
+      var y = position.top;
+      window.scrollTo(x,y)
+    }
+  </script>
 </html

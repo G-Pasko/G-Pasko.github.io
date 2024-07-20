@@ -11,6 +11,8 @@
   </head>
 
   <body>
+
+
     <!-- Header of website-->
     <div class="header card">
       <div class="section header-content">
@@ -41,8 +43,47 @@
         </button>
       </nav>
     </div>
+    
+    <div class='scroll-card'>
+        <div class="tooltip">
+        <img class="tooltip-img" src="../assets/HamburgerBtn.png"></img>
+        <span class="tooltip-content">
+          <div class="section-subtitle">Scroll to section:</div>
+            <button class="button is-info is-outlined is-responsive nav-button" 
+            onclick="scrollWindow('games');">
+              <span class="nav-btn-text">Jump to Games </span>
+            </button>
+
+            <button class="button is-info is-outlined is-responsive nav-button" 
+            onclick="scrollWindow('PythonProjects');">
+              <span class="nav-btn-text">Jump to Python Projects </span>
+            </button>
+          </div>
+        </span>
+      </div>
+
 
     <div class="personal-project-section">
+      
+      
+      <div class="card" id="games">
+        <div class="section-title game-title">Turtle Recon</div>
+        <div class="game-section-left">
+          <br>
+          <div class="project-images">
+            <img src="../assets/TurtleReconPic1.png" class="game-cover-pic"></img>
+          </div>
+
+          <strong class="game-description">
+            &emsp; Immersive 3D rogue-like where you explore the ocean as a sea turtle. Study the ocean and pollution by collecting research tokens. Spend research tokens on upgrades and resources to clean the ocean. Complete your research to reach your end destination and win. For this, I spooled in data such as player location and timers and programmed the various classes of obstacles and their interactions with the player.
+          </strong>
+        </div>
+        <div style="text-align: center;">
+          (playable on mobile, PC, Mac, Linux)
+        </div>
+      </div>
+
+
       <div class="card">
         <div class="section-title game-title">Color Runner (working title)</div>
         <div class="game-section-left">
@@ -101,22 +142,15 @@
         <div style="text-align: center;">
           (playable on mobile, PC, Mac, Linux)
         </div>
-      </div>
+      </div> 
+    </div>
 
-      <div class="card">
-        <div class="section-title game-title">Turtle Recon</div>
+    <div class="card" id="PythonProjects">
+      <div class="section-title game-title">Scamit Web Scraper</div>
         <div class="game-section-left">
-          <br>
-          <div class="project-images">
-            <img src="../assets/TurtleReconPic1.png" class="game-cover-pic"></img>
-          </div>
-
           <strong class="game-description">
-            &emsp; Immersive 3D rogue-like where you explore the ocean as a sea turtle. Study the ocean and pollution by collecting research tokens. Spend research tokens on upgrades and resources to clean the ocean. Complete your research to reach your end destination and win. For this, I spooled in data such as player location and timers and programmed the various classes of obstacles and their interactions with the player.
+            &emsp; Using the Beautiful Soup library, I was able to make a web scraper for the <a href="https://www.scamit.org/" target="_blank" rel="noopener noreferrer">Scamit</a> database. The Taxonomic Toolbox, as they call it, is a PHP-generated tree that represents their documented phyla, classes, families, and species. The web scraper would scan the HTML page for elements matching the user's query. The git repo is on my Git Hub. You can download it and run it in your terminal today!
           </strong>
-        </div>
-        <div style="text-align: center;">
-          (playable on mobile, PC, Mac, Linux)
         </div>
       </div> 
     </div>
@@ -130,4 +164,18 @@
       </div>
     </footer>
   </body>
-</html
+  <script type="text/javascript">
+    function scrollWindow(id)
+    {
+      var element = document.getElementById(id)
+      var position = element.getBoundingClientRect();
+      var x = position.left;
+      var y = position.top;
+      window.scrollTo(x,y)
+    }
+  </script>
+</html>
+
+
+
+

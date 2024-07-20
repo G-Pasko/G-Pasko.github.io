@@ -8,7 +8,7 @@
 }
 
 .header-title {
-	font-size: calc(1vw * 5);
+	font-size: calc(1vw * 6);
 	font-style: italic;
 	text-align: justify-all;
 	display: flex;
@@ -23,14 +23,14 @@
 }
 
 .profile-pic {
-	width: 15%;
+	width: calc(1vw * 15);
 	height: 15%;
 	padding-right: 1%; 
 }
 
 .header-navbar {
 	display: flex;
-	width: 95%;
+	width: calc(1vw * 100);
 	justify-content: center;
 	margin: auto;
 	padding: auto;
@@ -47,14 +47,13 @@
 	}
 }
 
-
 .abt-me {
 	display: flex;
 	align-items: center;
 }
 
 .abt-me-pic {
-	width: 20%;
+	width: calc(1vw * 25);
 	height: 20%;
 	padding-right: 1%;
 	vertical-align: middle;
@@ -101,12 +100,12 @@
 }
 
 .resume-column-left {
-	width: 66%;
+	width: 75%;
 	float: left;
 }
 
 .resume-column-right {
-	width: 33%;
+	width: 25%;
 	.job-list {
 		margin-left: 5%;
 	}
@@ -222,4 +221,59 @@
 	.section-subtitle{
 		font-size: calc(1vw * 1.5);
 	}
+}
+
+.scroll-card {
+	position: sticky;
+	opacity: ;
+	box-shadow: 3px 3px 4px lightblue;
+	border-radius: 10%;
+	width: fit-content;
+	top: 15%;
+	z-index: 1;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	padding: 0.5%;
+	.nav-button {
+		opacity: 0.8;
+		width: calc(1vw * 20);
+		padding: 1%;
+		margin: auto;
+		overflow: hidden;
+		.nav-btn-text {
+			display: flex;
+			font-weight: bold;
+			font-size: calc(1vw * 1.5);
+		}
+	}
+}
+
+.tooltip {
+	background-color: grey;
+	border-radius: 5%;
+	position: relative;
+	width: calc(1vw * 3);
+	height: calc(1vw * 3);
+	visible;
+	.tooltip-content {
+		visibility: hidden;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		padding: 3px;
+		border-radius: 6px;
+		position: absolute;
+		z-index: 1;
+	}
+	.tooltip-img {
+		height: 100%;
+		width: 100%;
+		opacity: 50%;
+	}
+
+}
+
+.tooltip:hover .tooltip-content {
+  visibility: visible;
 }
