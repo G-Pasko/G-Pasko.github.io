@@ -122,7 +122,7 @@ ol,ul {
 	vertical-align: middle;
 	font-style: italic;
 }
-
+/*
 .res-page-section {
 	width: 100%;
 	display: flex;
@@ -160,6 +160,31 @@ ol,ul {
 		display: flex;
 	}
 }
+*/
+.job-list {
+		margin-left: 5%;
+	}
+
+	.pos-title {
+		color: #e8e8e8;
+		font-size: calc(1vw * 2.5);
+		font-weight: bold;
+		text-decoration: underline;
+
+	}
+	.pos-subtitle {
+		color: #e8e8e8;
+		font-weight: bold;
+		font-style: italic;
+		font-size: calc(1vw * 1.75);
+	}
+
+	.pos-content {
+		color: #bfbfbf;
+		font-size: calc(1vw * 1.5);
+		font-weight: bold;
+		display: flex;
+	}
 
 .personal-project-section {
 	margin: 1%;
