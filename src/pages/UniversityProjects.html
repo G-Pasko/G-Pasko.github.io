@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <!-- Header of website-->
   	<div class="header card">
       <div class="section header-content">
         <div class="title">
@@ -20,7 +21,7 @@
           </div>
         </div>
       </div>
-      
+      <!-- Header Navbar-->
       <nav class="navbar header-navbar" role="navigation">
         <button class="button is-info is-inverted is-outlined is-responsive nav-button"
         onclick="location.href = '../../index.html';">
@@ -89,6 +90,13 @@
           </strong>
         </div>
 
+        <div class="card-content">
+          <div class="section-subtitle">Motion Detection</div>
+          <strong class="section-body">
+            &emsp;Using feed from a camera, the program queues up frames from the footage to be processed by the program. The program iterates over every pixel of the first frame to get its hexadecimal color value. Then, it compares those values to that of the next frame and replaces its stored values with the new ones if they are different, while simultaneously increasing a counter for the number of different pixels. If the number of different pixels between frames reaches a specified threshold, it will return a "Movement detected" message to the user.
+          </strong>
+        </div>
+      <!--Bottom of Python projects-->
       </div>
 
       <div class="card" id="C/C++">
