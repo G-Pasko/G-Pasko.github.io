@@ -24,8 +24,9 @@ ol,ul {
     list-style: none;
 }
 
-
 .header {
+	margin-left: calc(1vw * 2);
+	margin-right: calc(1vw * 2);
 	background-color: black;
 }
 
@@ -57,7 +58,6 @@ ol,ul {
 
 .header-navbar {
 	display: flex;
-	width: calc(1vw * 100);
 	justify-content: center;
 	margin: auto;
 	padding: auto;
@@ -124,29 +124,29 @@ ol,ul {
 }
 
 .job-list {
-		margin-left: 5%;
-	}
+	margin-left: 5%;
+}
 
-	.pos-title {
-		color: #e8e8e8;
-		font-size: calc(1vw * 2.5);
-		font-weight: bold;
-		text-decoration: underline;
+.pos-title {
+	color: #e8e8e8;
+	font-size: calc(1vw * 2.5);
+	font-weight: bold;
+	text-decoration: underline;
 
-	}
-	.pos-subtitle {
-		color: #e8e8e8;
-		font-weight: bold;
-		font-style: italic;
-		font-size: calc(1vw * 1.75);
-	}
+}
+.pos-subtitle {
+	color: #e8e8e8;
+	font-weight: bold;
+	font-style: italic;
+	font-size: calc(1vw * 1.75);
+}
 
-	.pos-content {
-		color: #bfbfbf;
-		font-size: calc(1vw * 1.5);
-		font-weight: bold;
-		display: flex;
-	}
+.pos-content {
+	color: #bfbfbf;
+	font-size: calc(1vw * 1.5);
+	font-weight: bold;
+	display: flex;
+}
 
 .personal-project-section {
 	margin: 1%;
@@ -220,7 +220,10 @@ ol,ul {
 	}
 }
 
-
+.Resume {
+	display: block;
+	margin: auto;
+}
 
 .control {
 	width: 800px;
