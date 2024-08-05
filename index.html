@@ -4,45 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Granger Pasko's Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bulma.min.css">
   </head>
   <!-- Website content -->
   <body>
     <!--- Website header --->
-    <div class="header card">
-      <div class="section header-content">
-        <div class="title" style="width: 85%;">
-          <p class="header-title">Welcome to Granger's Website!</p>
-          <div class="header-subtitle">
-           This website is still under construction. Don't worry, there's more coming soon!
+    <div class="header">
+      <div class="card">
+        <div class="header-content">
+          <div class="title" style="width: 85%;">
+            <p class="header-title">Welcome to Granger's Website!</p>
+            <div class="header-subtitle">
+             This website is still under construction. Don't worry, there's more coming soon!
+            </div>
           </div>
+          <img src="src/assets/ProfilePic.png" class="profile-pic"></img>
         </div>
-        <img src="src/assets/ProfilePic.png" class="profile-pic"></img>
+        <!-- Website nav bar -->
+        <nav class="navbar header-navbar" role="navigation">
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button is-focused is-hovered" 
+          onclick="location.href = 'index.html';">
+            <span class="nav-btn-text">About Me</span>
+          </button>
+
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button"
+          onclick="location.href = 'src/pages/Resume.html';">
+            <span class="nav-btn-text">Resume</span>
+          </button>
+
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button"
+          onclick="location.href = 'src/pages/PersonalProjects.html';">
+            <span class="nav-btn-text">Personal Projects </span>
+          </button>
+
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button"
+          onclick="location.href = 'src/pages/UniversityProjects.html';">
+            <span class="nav-btn-text">University Projects </span>
+          </button>
+        </nav>
       </div>
-      <!-- Website nav bar -->
-      <nav class="navbar header-navbar" role="navigation">
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button is-focused is-hovered" 
-        onclick="location.href = 'index.html';">
-          <span class="nav-btn-text">About Me</span>
-        </button>
-
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button"
-        onclick="location.href = 'src/pages/Resume.html';">
-          <span class="nav-btn-text">Resume</span>
-        </button>
-
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button"
-        onclick="location.href = 'src/pages/PersonalProjects.html';">
-          <span class="nav-btn-text">Personal Projects </span>
-        </button>
-
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button"
-        onclick="location.href = 'src/pages/UniversityProjects.html';">
-          <span class="nav-btn-text">University Projects </span>
-        </button>
-      </nav>
     </div>
     <!--body-->
     <div class="section is-responsive abt-me">

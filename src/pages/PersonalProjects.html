@@ -12,34 +12,36 @@
 
   <body>
     <!-- Header of website-->
-    <div class="header card">
-      <div class="section header-content">
-        <div class="title">
-          <p  class="header-title">Personal Projects</p>
-          <div class="header-subtitle">
-           This page is still under construction. The games that are not yet playable will soon be available on itch.io
+    <div class="header">
+      <div class="card">
+        <div class="header-content">
+          <div class="title">
+            <p  class="header-title">Personal Projects</p>
+            <div class="header-subtitle">
+             This page is still under construction. The games that are not yet playable will soon be available on itch.io
+            </div>
           </div>
         </div>
+        <!-- Header Navbar-->
+      	<nav class="navbar header-navbar" role="navigation">
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+          onclick="location.href = '../../index.html';">
+            <span class="nav-btn-text">About Me</span>
+          </button>
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+          onclick="location.href = './Resume.html';">
+            <span class="nav-btn-text">Resume</span>
+          </button>
+          <button class="button is-info is-inverted is-outlined is-responsive is-focused is-hovered nav-button" 
+          onclick="location.href = 'PersonalProjects.html';">
+            <span class="nav-btn-text">Personal Projects </span>
+          </button>
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+          onclick="location.href = 'UniversityProjects.html';">
+            <span class="nav-btn-text">University Projects </span>
+          </button>
+        </nav>
       </div>
-      <!-- Header Navbar-->
-    	<nav class="navbar header-navbar" role="navigation">
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
-        onclick="location.href = '../../index.html';">
-          <span class="nav-btn-text">About Me</span>
-        </button>
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
-        onclick="location.href = './Resume.html';">
-          <span class="nav-btn-text">Resume</span>
-        </button>
-        <button class="button is-info is-inverted is-outlined is-responsive is-focused is-hovered nav-button" 
-        onclick="location.href = 'PersonalProjects.html';">
-          <span class="nav-btn-text">Personal Projects </span>
-        </button>
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
-        onclick="location.href = 'UniversityProjects.html';">
-          <span class="nav-btn-text">University Projects </span>
-        </button>
-      </nav>
     </div>
     <!--
     <div class='scroll-card'>
@@ -82,7 +84,9 @@
 
 
       <div class="card">
-        <div class="section-title game-title">Color Runner (working title)</div>
+        <div class="section-title game-title">
+          <a href="https://grancherro.itch.io/color-runner" target="_blank" rel="noopener noreferrer">Color Runner (working title)</a>
+        </div>
         <div class="game-section-left">
           <br>
           <div class="project-images">
@@ -104,7 +108,9 @@
       </div>
 
       <div class="card">
-        <div class="section-title game-title">Solar Clicker (working title)</div>
+        <div class="section-title game-title">
+          <a href="https://grancherro.itch.io/solar-clicker" target="_blank" rel="noopener noreferrer">Solar Clicker (working title)</a>
+        </div>
         <div class="game-section-right">
           <br>
           <strong class="game-description">
@@ -126,7 +132,9 @@
     
 
       <div class="card">
-        <div class="section-title game-title">Green City Manager</div>
+        <div class="section-title game-title">
+          <a href="https://apileofbacon.itch.io/green-city-manager" target="_blank" rel="noopener noreferrer">Green City Manager</a>
+        </div>
         <div class="game-section-left">
           <br>
           <div class="project-images">
@@ -140,16 +148,17 @@
           (playable on mobile, PC, Mac, Linux)
         </div>
       </div> 
-    </div>
+    
 
-    <div class="card" id="PythonProjects">
-      <div class="section-title game-title">Scamit Web Scraper</div>
-        <div class="game-section-left">
-          <strong class="game-description">
-            &emsp; Using the Beautiful Soup library, I was able to make a web scraper for the <a href="https://www.scamit.org/" target="_blank" rel="noopener noreferrer">Scamit</a> database. The Taxonomic Toolbox, as they call it, is a PHP-generated tree that represents their documented phyla, classes, families, and species. The web scraper would scan the HTML page for elements matching the user's query. The git repo is on my Git Hub. You can download it and run it in your terminal today!
-          </strong>
-        </div>
-      </div> 
+      <div class="card" id="PythonProjects">
+        <div class="section-title game-title">Scamit Web Scraper</div>
+          <div class="game-section-full">
+            <strong class="game-description">
+              &emsp; Using the Beautiful Soup library, I was able to make a web scraper for the <a href="https://www.scamit.org/" target="_blank" rel="noopener noreferrer">Scamit</a> database. The Taxonomic Toolbox, as they call it, is a PHP-generated tree that represents their documented phyla, classes, families, and species. The web scraper would scan the HTML page for elements matching the user's query. The git repo is on my Git Hub. You can download it and run it in your terminal today!
+            </strong>
+          </div>
+        </div> 
+      </div>
     </div>
   </body>
 

@@ -25,14 +25,20 @@ ol,ul {
 }
 
 .header {
-	margin-left: calc(1vw * 2);
-	margin-right: calc(1vw * 2);
+	margin: calc(1vw*2);
 	background-color: black;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	.card {
+		height: fit-content;
+	}
 }
 
 .header-content {
 	display: flex;
 	align-items: center;
+	margin: calc(1vw * 2);
 }
 
 .header-title {
@@ -106,11 +112,11 @@ ol,ul {
 	text-align: justify-all;
 	color: #bfbfbf;
 	font-weight: bold;
-
 	display: flex;
 }
 
 .web-footer {
+	font-size: calc(1vw * 3);
 	bottom: 0;
 	vertical-align: middle;
 	width: 100%;
@@ -153,6 +159,10 @@ ol,ul {
 	vertical-align: top;
 	.game-title {
 		text-align: center;
+		color: #dbdbdb;
+		a {
+			color: #dbdbdb;
+		}
 	}
 
 	.game-section-left {
@@ -160,6 +170,7 @@ ol,ul {
 		height: auto;
 		.project-images {
 			width: 40%;
+			height: fit-content;
 			float: left;
 			display: flex;
 			flex-direction: column;
@@ -187,8 +198,10 @@ ol,ul {
 
 	.game-section-right {
 		display: flex;
+		height: fit-content;
 		.project-images {
 			width: 40%;
+			height: fit-content;
 			float: right;
 			display: flex;
 			flex-direction: row;
@@ -215,6 +228,25 @@ ol,ul {
 			float: left;
 			margin-left: 3%;
 			margin-right: 3%;
+			font-size: calc(1vw * 2);
+		}
+	}
+	.game-section-full{
+		display: flex;
+		height: auto;
+		.project-images {
+			width: 40%;
+			height: fit-content;
+			float: left;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.game-description {
+			width: 100%;
+			margin-left: 3%;
+			margin-right: 3%;
+			float: right;
 			font-size: calc(1vw * 2);
 		}
 	}

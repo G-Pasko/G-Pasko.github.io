@@ -12,34 +12,36 @@
 
   <body>
     <!-- Header of website-->
-  	<div class="header card">
-      <div class="section header-content">
-        <div class="title">
-          <p  class="header-title">University Projects</p>
-          <div class="header-subtitle">
-           Unfortunately, UCSC does not allow code to be shared to the public. Below are the descriptions of varioius projects I completed.
+  	<div class="header">
+      <div class="card">
+        <div class="header-content">
+          <div class="title">
+            <p  class="header-title">University Projects</p>
+            <div class="header-subtitle">
+             Unfortunately, UCSC does not allow code to be shared to the public. Below are the descriptions of varioius projects I completed.
+            </div>
           </div>
         </div>
+        <!-- Header Navbar-->
+        <nav class="navbar header-navbar" role="navigation">
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button"
+          onclick="location.href = '../../index.html';">
+            <span class="nav-btn-text">About Me</span>
+          </button>
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button"
+          onclick="location.href = './Resume.html';">
+            <span class="nav-btn-text">Resume</span>
+          </button>
+          <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
+          onclick="location.href = 'PersonalProjects.html';">
+            <span class="nav-btn-text">Personal Projects </span>
+          </button>
+          <button class="button is-info is-inverted is-outlined is-responsive is-focused is-hovered nav-button"
+          onclick="location.href = 'UniversityProjects.html';">
+            <span class="nav-btn-text">University Projects </span>
+          </button>
+        </nav>
       </div>
-      <!-- Header Navbar-->
-      <nav class="navbar header-navbar" role="navigation">
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button"
-        onclick="location.href = '../../index.html';">
-          <span class="nav-btn-text">About Me</span>
-        </button>
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button"
-        onclick="location.href = './Resume.html';">
-          <span class="nav-btn-text">Resume</span>
-        </button>
-        <button class="button is-info is-inverted is-outlined is-responsive nav-button" 
-        onclick="location.href = 'PersonalProjects.html';">
-          <span class="nav-btn-text">Personal Projects </span>
-        </button>
-        <button class="button is-info is-inverted is-outlined is-responsive is-focused is-hovered nav-button"
-        onclick="location.href = 'UniversityProjects.html';">
-          <span class="nav-btn-text">University Projects </span>
-        </button>
-      </nav>
     </div>
     <!--
     <div class='scroll-card'>
@@ -138,7 +140,7 @@
             </strong>
             <button class="button is-info is-inverted is-outlined is-responsive nav-button"
             onclick="location.href = 'WebGLDemo/WebGLDemo.html';">
-              <div class="nav-btn-text">See the world HERE</div>
+              <div class="nav-btn-text">See world HERE</div>
             </button>
           </div>
 
