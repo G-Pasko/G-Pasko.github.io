@@ -127,6 +127,18 @@ ol,ul {
 	text-align: center;
 	vertical-align: middle;
 	font-style: italic;
+	.footer-icons {
+		justify-content: center;
+		img {
+			vertical-align: middle;
+			width: calc(10vw);
+			height: auto;
+			color: blue;
+			margin-left: calc(5vw);
+			margin-right: calc(5vw);
+			padding: auto;
+		}
+	}
 }
 
 .job-list {
