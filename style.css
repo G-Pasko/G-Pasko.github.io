@@ -108,7 +108,7 @@ ol,ul {
 }
 
 .section-body {
-	font-size: clamp(16px, 2vw, 33px);;
+	font-size: clamp(10px, 2vw, 33px);;
 	text-align: justify-all;
 	color: #bfbfbf;
 	font-weight: bold;
@@ -127,12 +127,12 @@ ol,ul {
 	text-align: center;
 	vertical-align: middle;
 	font-style: italic;
-	font-size: clamp(16px, 2vw, 60px);
+	font-size: clamp(10px, 2vw, 60px);
 	.footer-icons {
 		justify-content: center;
 		img {
 			vertical-align: middle;
-			width: clamp(10px, 10vw, 90px);;
+			width: clamp(10px, 10vw, 90px);
 			height: auto;
 			color: blue;
 			margin-left: calc(5vw);
@@ -148,7 +148,7 @@ ol,ul {
 
 .pos-title {
 	color: #e8e8e8;
-	font-size: calc(1vw * 2.5);
+	font-size: clamp(10px, 2.5vw, 60px);
 	font-weight: bold;
 	text-decoration: underline;
 
@@ -205,7 +205,7 @@ ol,ul {
 			margin-left: 3%;
 			margin-right: 3%;
 			float: right;
-			font-size: clamp(16px, 2vw, 35px);
+			font-size: clamp(10px, 2vw, 35px);
 		}
 	}
 
@@ -241,7 +241,7 @@ ol,ul {
 			float: left;
 			margin-left: 3%;
 			margin-right: 3%;
-			font-size: clamp(16px, 2vw, 35px);
+			font-size: clamp(10px, 2vw, 35px);
 		}
 	}
 	.game-section-full{
@@ -260,7 +260,7 @@ ol,ul {
 			margin-left: 3%;
 			margin-right: 3%;
 			float: right;
-			font-size: clamp(16px, 2vw, 35px);
+			font-size: clamp(10px, 2vw, 35px);
 		}
 	}
 }
