@@ -18,7 +18,7 @@ time, mark, audio, video, active, hover, selected {
     border: 0;
     outline: none;
     text-decoration: none;
-}
+    max-width: 2000px;
 
 ol,ul {
     list-style: none;
@@ -42,7 +42,7 @@ ol,ul {
 }
 
 .header-title {
-	font-size: calc(1vw * 6);
+	font-size: clamp(16px, 6vw, 120px);
 	font-style: italic;
 	text-align: justify-all;
 	display: flex;
@@ -52,7 +52,7 @@ ol,ul {
 
 .header-subtitle {
 	display: flex;
-	font-size: calc(1vw * 2);
+	font-size: clamp(16px, 3vw, 44px);
 	color: #dbdbdb;
 }
 
@@ -76,7 +76,7 @@ ol,ul {
 	.nav-btn-text {
 		display: flex;
 		font-weight: bold;
-		font-size: calc(1vw * 2.25);
+		font-size: clamp(16px, 2.25vw, 40px);
 	}
 }
 
@@ -93,14 +93,14 @@ ol,ul {
 }
 
 .section-title {
-	font-size: calc(1vw * 4);
+	font-size: clamp(16px, 4vw, 88px);
 	font-style: italic;
 	text-decoration: underline;
 	font-weight: bold;
 }
 
 .section-subtitle {
-	font-size: calc(1vw * 3);
+	font-size: clamp(16px, 3vw, 55px);;
 	font-style: italic;
 	text-decoration: underline;
 	font-weight: bold;
@@ -108,7 +108,7 @@ ol,ul {
 }
 
 .section-body {
-	font-size: calc(1vw * 2);
+	font-size: clamp(16px, 2vw, 33px);;
 	text-align: justify-all;
 	color: #bfbfbf;
 	font-weight: bold;
@@ -116,7 +116,7 @@ ol,ul {
 }
 
 .web-footer {
-	font-size: calc(1vw * 3);
+	font-size: clamp(16px, 3vw, 99px);
 	bottom: 0;
 	vertical-align: middle;
 	width: 100%;
@@ -127,11 +127,12 @@ ol,ul {
 	text-align: center;
 	vertical-align: middle;
 	font-style: italic;
+	font-size: clamp(16px, 2vw, 60px);
 	.footer-icons {
 		justify-content: center;
 		img {
 			vertical-align: middle;
-			width: calc(10vw);
+			width: clamp(10px, 10vw, 90px);;
 			height: auto;
 			color: blue;
 			margin-left: calc(5vw);
@@ -204,7 +205,7 @@ ol,ul {
 			margin-left: 3%;
 			margin-right: 3%;
 			float: right;
-			font-size: calc(1vw * 2);
+			font-size: clamp(16px, 2vw, 35px);
 		}
 	}
 
@@ -240,7 +241,7 @@ ol,ul {
 			float: left;
 			margin-left: 3%;
 			margin-right: 3%;
-			font-size: calc(1vw * 2);
+			font-size: clamp(16px, 2vw, 35px);
 		}
 	}
 	.game-section-full{
@@ -259,7 +260,7 @@ ol,ul {
 			margin-left: 3%;
 			margin-right: 3%;
 			float: right;
-			font-size: calc(1vw * 2);
+			font-size: clamp(16px, 2vw, 35px);
 		}
 	}
 }
